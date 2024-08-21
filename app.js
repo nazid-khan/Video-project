@@ -8,9 +8,16 @@ const video = document.querySelector("video-container");
 btn.addEventListener("click",function(){
     if(!btn.classList.contains("slide")){
         btn.classList.add("slide");
-        
+
     }
     else{
         btn.classList.remove("slide");
     }
+});
+
+// pre loader
+const preLoader = document.querySelector(".preloader");
+
+window.addEventListener("load",function(){
+    preLoader.classList.add("hide-preloader");
 });
